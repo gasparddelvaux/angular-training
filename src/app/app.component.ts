@@ -17,7 +17,7 @@ export class AppComponent {
   
   public menu = '';
 
-  setMenu(value: string) {
+  setMenuInApp(value: string) {
     this.menu = value;
   }
 }

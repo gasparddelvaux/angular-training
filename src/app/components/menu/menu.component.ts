@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,9 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
+  @Input() menu = "";
   @Output() choice = new EventEmitter();
-
-  menu = "";
 
   public setMenu(value: string) {
     this.choice.emit(value);

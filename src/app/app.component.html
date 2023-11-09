@@ -1,4 +1,4 @@
-<app-menu (choice)="setMenu($event)"></app-menu>
+<app-menu (choice)="setMenuInApp($event)" [menu]="menu"></app-menu>
 @if(menu === 'entreprise') {
     <app-entreprise></app-entreprise>
 } @else if (menu === 'personne') {
