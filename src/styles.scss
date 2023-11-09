@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins&family=Roboto&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.liste {
+    width: 100%;
+    table-layout: auto;
+    padding: 2rem;
+
+    th {
+        text-align: left;
+        background: beige;
+        padding: .75rem;
+    }
+
+    td {
+        padding: .5rem;
+        background: rgba(245, 245, 220, 0.2);
+    }
+}
+
+nav > span {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav > span.active {
+    border: 3px solid bisque;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}

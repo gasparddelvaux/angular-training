@@ -1,0 +1,20 @@
+<table class="liste">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Chiffre d'affaire</th>
+        <th>Secteur</th>
+        <th>Adresse</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(entreprise of entreprises; track entreprise.nom) {
+      <tr>
+        <td>{{ entreprise.nom }}</td>
+        <td>{{ entreprise.affaire | currency:'EUR'}}</td>
+        <td>{{ entreprise.secteur }}</td>
+        <td><app-adresse [adresse]="entreprise.adresse"></app-adresse></td>
+      </tr>
+      }
+    </tbody>
+  </table>

@@ -1,0 +1,20 @@
+<table class="liste">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Secteur</th>
+        <th>Adresse</th>
+      </tr>
+    </thead>
+    <tbody>
+    @for(personne of personnes; track personne.nom) {
+      <tr>
+        <td>{{ personne.nom }}</td>
+        <td>{{ personne.prenom }}</td>
+        <td>{{ personne.activite }}</td>
+        <td><app-adresse [adresse]="personne.adresse"></app-adresse></td>
+      </tr>
+    }
+    </tbody>
+  </table>
